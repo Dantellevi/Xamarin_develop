@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Slidder_Stepper"
+             x:Class="Slidder_Stepper.MainPage">
+
+  <ContentPage.Content>
+    <StackLayout>
+      <Button x:Name="button1" Text="Кнопка для проверки"></Button>
+      <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        <Slider x:Name="Slider1" Minimum="0" Maximum="100" Value="15" ValueChanged="Slider1_valueChanged" HorizontalOptions="FillAndExpand"></Slider>
+        <Stepper x:Name="stepper1" Minimum="0" Maximum="100" Value="8" Increment="2" ValueChanged="stepper1_valueChanged" HorizontalOptions="End"></Stepper>
+        </StackLayout>
+      <Editor x:Name="editor1" Text="Какой то текст" VerticalOptions="FillAndExpand"></Editor>
+    </StackLayout>
+  </ContentPage.Content>
+
+</ContentPage>

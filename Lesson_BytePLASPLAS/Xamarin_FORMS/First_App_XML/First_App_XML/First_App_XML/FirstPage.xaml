@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="First_App_XML.FirstPage"
+             Title="First_Page">
+
+  <StackLayout>
+   
+    <Entry x:Name="Entry1" Placeholder="Напиши что нибудь!!!!"></Entry>
+    <Button Text="Нажми меня пожалуйста!!" FontAttributes="Bold" Clicked="ButtonHello_Click" ></Button>
+    <Label x:Name="Label1" FontSize="27" Text="Привет этот чудный новый мир"></Label>
+    
+  </StackLayout>
+</ContentPage>

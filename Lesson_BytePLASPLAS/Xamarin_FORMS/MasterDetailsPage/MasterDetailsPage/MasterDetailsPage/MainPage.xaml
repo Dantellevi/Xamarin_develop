@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MasterDetailsPage"
+             x:Class="MasterDetailsPage.MainPage"
+                  Title="MasterApp">
+
+  <MasterDetailPage.Master>
+    <ContentPage Title="Меню" BackgroundColor="#b9f6ca">
+      <StackLayout Padding="5,30,5,5" Orientation="Vertical">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+          <Image WidthRequest="65" HeightRequest="65" Aspect="AspectFit" Source="cherep.jpg" VerticalOptions="Center" ></Image>
+          <Label Text="User" VerticalOptions="Center"></Label>
+        </StackLayout>
+          <!--||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+          <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Image WidthRequest="24" HeightRequest="24" Aspect="AspectFit" Source="friends.jpg" HorizontalOptions="Start"></Image>
+            <Button Text="Друзья"  Clicked="But_1_click"  HorizontalOptions="FillAndExpand"></Button>
+          </StackLayout>
+          <!--|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||-->
+          <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Image WidthRequest="24" HeightRequest="24" Aspect="AspectFit" Source="news.jpg" HorizontalOptions="Start"></Image>
+            <Button Text="Новости" Clicked="But_2_click"  HorizontalOptions="FillAndExpand"></Button>
+          </StackLayout>
+       
+       
+      </StackLayout>
+    </ContentPage>
+  </MasterDetailPage.Master>
+  
+  <MasterDetailPage.Detail>
+    <ContentPage  Title="окно">
+      <Label Text="DetailPage" VerticalTextAlignment="Center" HorizontalTextAlignment="Center">
+
+      </Label>
+    </ContentPage>
+  </MasterDetailPage.Detail>
+</MasterDetailPage>

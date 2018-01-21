@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App_CrossPlatformed"
+             x:Class="App_CrossPlatformed.MainPage">
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+
+    <Label Text="Welcome to Xamarin Forms!" Grid.Row="0"
+            />
+
+    <Label Text="Саня останется с нами!!!!"
+            Grid.Row="1"   />
+
+    <Label Text="Hello" HorizontalOptions="Center" Grid.Row="2">
+
+      <Label.VerticalOptions>
+        <!--выравнивания текста по центру(2-ой способ)--> 
+        <LayoutOptions>Center</LayoutOptions>
+      </Label.VerticalOptions>
+
+      <Label.Style>
+        <Style TargetType="Label">
+          <Setter Property="TextColor" Value="Red"></Setter>
+          <!--Устанавливаем цвет текста-->
+          <Setter Property="BackgroundColor" Value="Silver"></Setter>
+          <!--Устанавливаем цвет фона Label-->
+
+        </Style>
+      </Label.Style>
+    </Label>
+
+
+
+    <button x:Name="but1" Text="Нажать!!!" clicked="Button_Click"/>
+    
+    
+  </Grid>
+ 
+
+</ContentPage>

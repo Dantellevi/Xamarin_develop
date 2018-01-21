@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ClicksOnButtons"
+             x:Class="ClicksOnButtons.MainPage">
+
+  <StackLayout Padding="12,12,12,12">
+    <Button x:Name="Button1" Text="Кнопка" FontAttributes="Bold" Clicked="Button1_Click"></Button>
+    <Button x:Name="Button2" Text="Кнопка 2" FontAttributes="Italic"></Button>
+    <Button x:Name="Button3" Text="Кнопка3"></Button>
+  </StackLayout>
+
+</ContentPage>

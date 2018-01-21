@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MasterDetailPageDemo.MenuPage"
+             xmlns:local="clr-namespace:MasterDetailPageDemo;assembly=MasterDetailPageDemo">
+
+  <MasterDetailPage.Master>
+    <ContentPage Title="Меню">
+      <StackLayout Orientation="Vertical">
+        <Button Text="News"></Button>
+        <Button Text="Android"></Button>
+        <Button Text="UWP"></Button>
+        <Button Text="IOS"></Button>
+        <Button Text="WinStore"></Button>
+        
+      </StackLayout>
+    </ContentPage>
+    
+  </MasterDetailPage.Master>
+  <MasterDetailPage.Detail>
+    <local:HomePage/>
+  </MasterDetailPage.Detail>
+  
+</MasterDetailPage>

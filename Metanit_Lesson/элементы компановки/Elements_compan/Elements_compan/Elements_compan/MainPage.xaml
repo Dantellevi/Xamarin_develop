@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Elements_compan"
+             x:Class="Elements_compan.MainPage">
+
+
+    <!--Размещение компонентов в контейрем XAML-->
+    <!--<StackLayout>
+      <Label x:name="lbl3" Text="третья метка во втором контейнере"></Label>
+      <Label x:name="lbl4" Text="четвертая  метка во втором контейнере"></Label>
+    </StackLayout>-->
+
+
+    <!--Установка отступов между элементами и расположение элементов stackLayout-->
+    <StackLayout x:Name="stackLayoutXAML" Spacing="8" Orientation="Horizontal" >
+      <Label Text="Первая метка-1" FontSize="Medium" TextColor="Red"  />
+      <Label Text="Вторая метка-2" FontSize="Medium" TextColor="Blue" />
+      <Label Text="Третья метка-3" FontSize="Medium" TextColor="Green" />
+    </StackLayout>
+  
+  <!--
+  <ScrollView>
+    <StackLayout>
+      <Label Text="Метка 1" FontSize="Large" />
+      <Label Text="Метка 2" FontSize="Large" />
+      ..................................................
+  <Label Text="Метка 20" FontSize="Large" />
+  </StackLayout>
+  </ScrollView>
+  -->
+  
+<!--=====================================Абсолютное позиционирование-AbsoluteLayout=====================-->
+  <!--<AbsoluteLayout>
+    <Label Text="Заголовок" FontSize="Large" AbsoluteLayout.LayoutBounds="70, 50, 150, 60" />
+    <Label Text="Основное содержание текста" FontSize="Medium" AbsoluteLayout.LayoutBounds="30, 110, AutoSize, AutoSize" />
+ </AbsoluteLayout>-->  
+  
+  
+<!--=====================================RelativeLayout===========================================-->
+  <!--
+      <RelativeLayout>
+        <BoxView Color="Red" RelativeLayout.XConstraint = "0" WidthRequest="100" HeightRequest="100" />
+ 
+        <BoxView Color="Green" WidthRequest="100" HeightRequest="100"
+             RelativeLayout.XConstraint = "{ConstraintExpression Type=RelativeToParent, 
+             Property=Width, Factor=0.33, Constant=0}"
+              RelativeLayout.YConstraint = "{ConstraintExpression Type=RelativeToParent, 
+              Property=Height, Factor=0.5, Constant=0}"/>
+ 
+        <BoxView Color="Blue"
+             RelativeLayout.XConstraint = "{ConstraintExpression Type=RelativeToParent, 
+             Property=Width, Factor=1, Constant=-150}"
+              RelativeLayout.YConstraint = "{ConstraintExpression Type=RelativeToParent, 
+              Property=Height, Factor=1, Constant=-100}"
+            RelativeLayout.WidthConstraint = "150" RelativeLayout.HeightConstraint = "100"/>
+    </RelativeLayout>
+  -->
+  <!--============================================================================================-->
+  
+
+<!--=====================================================GRID=====================================-->
+  <!--
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+      <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <BoxView Color="Red" Grid.Column="0" Grid.Row="0" />
+    <BoxView Color="Blue" Grid.Column="0" Grid.Row="1" />
+    <BoxView Color="Fuchsia" Grid.Column="0" Grid.Row="2" />
+     
+    <BoxView Color="Teal" Grid.Column="1" Grid.Row="0" />
+    <BoxView Color="Green" Grid.Column="1" Grid.Row="1" />
+    <BoxView Color="Maroon" Grid.Column="1" Grid.Row="2" />
+     
+    <BoxView Color="Olive" Grid.Column="2" Grid.Row="0" />
+    <BoxView Color="Pink" Grid.Column="2" Grid.Row="1" />
+    <BoxView Color="Yellow" Grid.Column="2" Grid.Row="2" />
+  </Grid>
+    -->
+<!--===============================================================================================-->
+
+</ContentPage>

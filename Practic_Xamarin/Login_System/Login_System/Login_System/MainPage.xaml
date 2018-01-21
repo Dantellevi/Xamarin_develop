@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Login_System"
+             x:Class="Login_System.MainPage"
+                       
+  >
+
+  <StackLayout>
+    <Label Text="Система авторизации" FontSize="16" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="Red" FontAttributes="Bold"></Label>
+    <!--=====================================первое поле===========================================-->
+    <Label Text="Введите имя пользователя" Margin="1,15,1,5" FontSize="14" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Italic"></Label>
+    <Entry x:Name="Entry_nameUser" FontSize="14" Placeholder="Имя пользователя"></Entry>
+    <!--==========================================Второе поле=================================================-->
+    <Label Text="Введите пороль пользователя" Margin="1,15,1,5" FontSize="14" HorizontalTextAlignment="Center" TextColor="Black" FontAttributes="Italic"></Label>
+    <Entry x:Name="Entry_passwordUser" FontSize="14" Placeholder="Имя пользователя" IsPassword="True"></Entry>
+    <!--==============================================================================================-->
+    <StackLayout Orientation="Horizontal">
+      <Button x:Name="but_ok" Margin="10,2,10,2" Text="ОК" Clicked="but_ok_click"></Button>
+      <Button x:Name="but_Cancel" Margin="10,2,10,2" Text="Отмена" Clicked="but_Cancel_click" ></Button>
+    </StackLayout>
+  </StackLayout>
+
+</ContentPage>

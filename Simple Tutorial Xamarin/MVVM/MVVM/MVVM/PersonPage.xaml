@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM.PersonPage"
+             xmlns:converters="clr-namespace:MVVM.Converter;assembly=MVVM"
+             >
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <converters:TextToColorConverter x:Key="TextToColorConverter"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+  <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center">
+    <Label Text="{ Binding person.Name}" FontSize="30" TextColor="Green"></Label>
+    <Label Text="{ Binding person.Email}" FontSize="30" TextColor="Purple"></Label>
+    <Button x:Name="btnShow" Text="show Name" Command="{Binding showCommand}"/>
+    <Label Text="{Binding Message}" 
+           TextColor="{Binding Message,Converter=(StaticResource TextToColorConverter)}"/>
+  </StackLayout>
+</ContentPage>

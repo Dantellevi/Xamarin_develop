@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navigation_Page.Page2">
+
+
+  <StackLayout>
+
+    <!--<button x:Name="But2" Clicked="But2_Click"></button>-->
+    <Label Text="page 2" VerticalOptions="Center" HorizontalOptions="Center" FontSize="45" TextColor="Green"/>
+  </StackLayout>
+  
+  
+</ContentPage>
