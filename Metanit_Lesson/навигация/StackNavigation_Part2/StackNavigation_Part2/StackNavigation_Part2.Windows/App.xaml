@@ -1,0 +1,7 @@
+﻿<Application
+    x:Class="StackNavigation_Part2.Windows.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:StackNavigation_Part2.Windows">
+
+</Application>

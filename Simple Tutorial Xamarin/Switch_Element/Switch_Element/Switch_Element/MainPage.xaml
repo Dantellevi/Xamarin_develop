@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Switch_Element"
+             x:Class="Switch_Element.MainPage">
+
+  <StackLayot orientation="Vertical" VerticalOptions="Center">
+    <Switch x:Name="MySwitch" HorizontalOptions="Center" Toggled="OnTogged">
+      
+    </Switch>
+    <Label x:Name="txtResult" HorizontalOptions="Center" FontSize="50"></Label>
+    
+    <!--Второй способ-->
+    <!--
+    <Label x:Name="txtResult" HorizontalOptions="Center" FontSize="50" Text="{Binding isToogled,Source={x:Reference MySwitch}}"></Label>
+    -->
+    
+  </StackLayot>
+</ContentPage>

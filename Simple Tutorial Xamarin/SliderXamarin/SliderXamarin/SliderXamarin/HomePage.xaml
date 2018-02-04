@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SliderXamarin.HomePage">
+  <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center">
+    <Slider x:Name="mySlider"
+            Minimum="0"
+            Maximum="100"
+            ValueChanged="mySlider_ValueChanged"></Slider>
+    <Label x:Name="txtResult" FontSize="50"></Label>
+    <!---===========================Привязка данных от слайдера к метке========================-->
+    <Label x:Name="txtResult2" FontSize="50" Text="{Binding Value,Source={x:Reference mySlider}}"></Label>
+  </StackLayout>
+</ContentPage>

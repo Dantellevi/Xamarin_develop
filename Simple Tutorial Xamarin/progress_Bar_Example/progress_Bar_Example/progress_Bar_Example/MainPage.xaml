@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:progress_Bar_Example"
+             x:Class="progress_Bar_Example.MainPage">
+
+  <StackLayout  Orientation="Vertical">
+    <ProgressBar x:Name="myprogressBar" Progress="0.2" WidthRequest="300"
+                 HeightRequest="20" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+    <Label x:Name="txtResult" FontSize="50"
+           HorizontalOptions="Center" VerticalOptions="End"></Label>
+  </StackLayout>
+
+</ContentPage>
