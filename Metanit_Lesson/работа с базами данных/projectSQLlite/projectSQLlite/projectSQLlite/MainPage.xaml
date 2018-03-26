@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:projectSQLlite"
+             x:Class="projectSQLlite.MainPage">
+
+  <StackLayout>
+    <!--Элемент ListView будет выводить список объектов, 
+    а при нажатии на элемент списка, будет срабатывать обработчик OnItemSelected. 
+    И также для добавления нового объекта определена кнопка.-->
+    <ListView x:Name="friendsList" ItemsSource="{Binding}" ItemSelected="OnItemSelected">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding Name}" FontSize="Medium" />
+              </StackLayout>
+            </ViewCell.View>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+    <Button Text="Добавить" Clicked="CreateFriend" />
+  </StackLayout>
+
+</ContentPage>

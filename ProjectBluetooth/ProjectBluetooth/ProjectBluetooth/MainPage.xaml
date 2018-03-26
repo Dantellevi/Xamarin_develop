@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ProjectBluetooth"
+             x:Class="ProjectBluetooth.MainPage">
+
+
+    <StackLayout>
+        <Button Text="Поиск сети" Clicked="Button_Clicked" />
+        <ListView x:Name="DeviceList" 
+                  IsPullToRefreshEnabled="true"
+                      CachingStrategy="RecycleElement"
+                  ItemSelected="DeviceList_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding NativeDevice.Name}"></Label>
+                            <Label Text="{Binding NativeDevice.Address}" ></Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+    
+</ContentPage>
